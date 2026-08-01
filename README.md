@@ -1,13 +1,19 @@
-# Mcp-Service
+# team-tools
 
-团队共享的 Claude Code 技能包（Skills）与 MCP 相关资源仓库。
+团队共享的 **Claude Code 技能包（Skills）、MCP 服务配置与项目知识库** 管理仓库。
 
 ## 目录结构
 
 ```
-Mcp-Service/
-└── skills/
-    └── project-knowledge-base/   # 项目知识库构建技能包
+team-tools/
+├── README.md                    # 本文
+├── skills/                      # Claude Code 技能包
+│   └── project-knowledge-base/  # 项目知识库构建技能包
+├── mcp/                         # MCP 服务配置与脚本
+│   ├── README.md
+│   └── examples/                # 配置模板
+└── knowledge-bases/             # 各项目知识库（归档/索引）
+    └── README.md
 ```
 
 ## skills/project-knowledge-base
@@ -20,8 +26,8 @@ Mcp-Service/
 
 ```bash
 # 克隆到目标机器，然后把技能复制到 Claude Code 全局 skills 目录
-git clone https://github.com/Dot-dream/Mcp-Service.git
-cp -r Mcp-Service/skills/project-knowledge-base ~/.claude/skills/
+git clone https://github.com/Dot-dream/team-tools.git
+cp -r team-tools/skills/project-knowledge-base ~/.claude/skills/
 
 # 验证
 ls ~/.claude/skills/project-knowledge-base/
@@ -48,3 +54,8 @@ ls ~/.claude/skills/project-knowledge-base/
 - 修改技能后 push 到本仓库即可同步到团队
 - 技能内部结构：`SKILL.md`（主编排）+ `references/`（规范与坑）+ `templates/`（模板）+ `scripts/`（校验脚本）
 - 具体说明见 `skills/project-knowledge-base/README.md`
+
+## mcp/ 与 knowledge-bases/
+
+- `mcp/` — MCP 服务配置/脚本，含可复用的配置模板，见其 README
+- `knowledge-bases/` — 各项目知识库的归档或索引，见其 README

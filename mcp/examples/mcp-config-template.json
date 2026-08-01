@@ -1,0 +1,17 @@
+{
+  "_说明": "Claude Code ~/.claude.json 中 mcpServers 的扁平结构示例（每个顶级键 = 一个服务器）。复制需要的条目到你的 mcpServers 即可。",
+  "mcpServers": {
+    "codegraph": {
+      "command": "codegraph",
+      "args": ["serve", "--mcp"]
+    },
+    "graphify": {
+      "command": "D:\\Python\\python_3.13.5\\python-3.13\\Scripts\\graphify-mcp.exe",
+      "args": ["--graph", "graphify-out/graph.json"]
+    },
+    "aixprobe": {
+      "type": "http",
+      "url": "http://192.168.137.217:8080/"
+    }
+  }
+}
