@@ -1,12 +1,18 @@
-# 依赖/构建产物
-node_modules/
-*.log
-.codegraph/
-graphify-out/
+# ---- 密钥与凭证(绝不提交) ----
+*.db
+*.sqlite
+auth.json
+secrets.json
+.env
+*.pem
+*.key
+*.pfx
 
-# 系统/编辑器
-.DS_Store
-Thumbs.db
-*.swp
-.idea/
-.vscode/
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- 缓存/日志 ----
+.cache/
+*.log
+*.tmp

@@ -1,0 +1,19 @@
+{
+  "_说明": "这是 ~/.claude.json 里 mcpServers 段的模板。拷贝回 ~/.claude.json 的 mcpServers 键下即可。",
+  "mcpServers": {
+    "aixprobe": {
+      "type": "http",
+      "url": "http://192.168.137.217:8080/"
+    },
+    "graphify": {
+      "command": "<PYTHON_SCRIPTS_DIR>/graphify-mcp.exe",
+      "args": ["--graph", "graphify-out/graph.json"]
+    },
+    "codegraph": {
+      "command": "codegraph",
+      "args": ["serve", "--mcp"]
+    },
+    "codegraph mcp_servers": {},
+    "mcp_servers": {}
+  }
+}
